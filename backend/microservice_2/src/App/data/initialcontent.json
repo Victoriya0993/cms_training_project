@@ -1,0 +1,50 @@
+{
+    "initial_content": [
+        {
+            "id": "1",
+            "title": "Новая страница",
+            "active": true,
+            "content": {
+                "title": "Добро пожаловать в конструктор сайтов!"
+            }
+        },
+        {
+            "id": "2",
+            "title": "Главная",
+            "active": true,
+            "content": {
+                "title": "Заголовок страницы Главная",
+                "description": "Добавьте описание к вашему сайту ...",
+                "background_image": ""
+            }
+        },
+        {
+            "id": "3",
+            "title": "Каталог",
+            "active": true,
+            "content": {
+                "title": "Заголовок страницы Каталог",
+                "cards": [
+                    {
+                        "name": "Наименование",
+                        "description": "Описание",
+                        "price": "Цена",
+                        "image": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "4",
+            "title": "Контакты",
+            "active": true,
+            "content": {
+                "title": "Заголовок страницы Контакты",
+                "adress": "",
+                "work_time": "",
+                "phone": "",
+                "image": ""
+            }
+        }
+    ]
+}
