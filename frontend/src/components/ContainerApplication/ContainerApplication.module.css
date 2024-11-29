@@ -1,0 +1,7 @@
+.container {
+    height: 90vh;
+    display: flex;
+    flex-flow: column;
+    padding: 40px 60px;
+    gap: 12px;
+}

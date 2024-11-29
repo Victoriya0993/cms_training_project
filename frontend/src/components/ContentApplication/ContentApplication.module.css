@@ -1,0 +1,49 @@
+.container {
+    font-family: 'Roboto';
+    flex: 1;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 900px;
+    height: 500px;
+    display: flex;
+    flex-flow: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+    padding: 30px;
+    background-color: #FFFFFF;
+}
+
+.block_request {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
+
+.name_service {
+    text-align: center;
+    margin: 16px 0px;
+}
+
+.button {
+    margin-top: 8px;
+}
+
+.block_response {
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+}
+
+.title {
+    margin: 4px 12px;
+}

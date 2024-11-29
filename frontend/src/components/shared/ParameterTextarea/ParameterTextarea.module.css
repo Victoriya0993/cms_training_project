@@ -1,0 +1,16 @@
+.input_question {
+    border: none;
+    width: 70%;
+    text-align: center;
+    border-radius: 16px;
+    text-align: center;
+    padding: 16px;
+    font-family: 'Roboto';
+    font-size: 32px;
+}
+
+.input_question:hover,
+:active,
+:focus {
+    border: none;
+}

@@ -1,0 +1,43 @@
+version: '3'
+services:
+
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3.9-management
+    hostname: my-rabbitmq
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - ./init_rabbitmq/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf:ro
+      - ./init_rabbitmq/definitions.json:/etc/rabbitmq/definitions.json:ro
+
+  frontend:
+    container_name: frontend
+    image: frontend:1.0.1
+    build: ./frontend
+    restart: always
+    depends_on:
+      - rabbitmq 
+    ports:
+      - 5070:5070
+
+  microservice_1:
+    container_name: microservice_1
+    image: microservice_1:1.0.1
+    build: ./backend/microservice_1
+    restart: always
+    depends_on:
+      - rabbitmq 
+    ports:
+      - 5001:5001
+
+  microservice_2:
+    container_name: microservice_2
+    image: microservice_2:1.0.1
+    build: ./backend/microservice_2
+    restart: always
+    depends_on:
+      - rabbitmq
+    ports:
+      - 5002:5002

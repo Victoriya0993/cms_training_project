@@ -1,0 +1,21 @@
+.card {
+    height: 250px;
+    width: 250px;
+    background-color: rgb(69, 186, 118, 0.76);
+    cursor: pointer;
+    border-radius: 16px;
+    font-family: 'Roboto';
+    font-size: 32px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    background-color: rgb(69, 186, 118);
+}
+
+.card:active {
+    background-color: rgb(44, 117, 74);
+}

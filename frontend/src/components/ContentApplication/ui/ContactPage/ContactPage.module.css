@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.left_block {
+    display: flex;
+    flex-flow: column;
+    border: 1px solid #45BA76;
+    border-radius: 16px;
+    width: 640px;
+    padding: 38px;
+    gap: 16px;
+}
+
+.right_block {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 28px;
+}
